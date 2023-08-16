@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="MSOLUI130Lib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>2a0a5991-0da7-4fec-aa7a-5ac6d10fe2fa</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="OcOfficeLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>2a59ca0a-4f1b-44df-a216-cb2c831e5870</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSOLUI140Lib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>a10fda3b-ac83-4e8f-815e-2f7c4642de49</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MsoTDAddinLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>aa53e405-c36d-478a-bbff-f359df962e6d</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSOLUI110Lib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>c78f486b-f679-4af5-9166-4e4d7ea1cefc</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="OfficeCSPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>82038836-85bb-49d5-bae6-f406733dcf40</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office2013CustomActionsLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>ab4d3fa3-21b9-443c-886e-fc4a417d3e4d</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="UCAddinLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>ab54a09e-1604-4438-9ac7-04be3e6b0320</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.PowerPoint">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>12</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>91493440-5a91-11cf-8700-00aa0060263b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSXML2">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>6</VersionMajor>
+      <Guid>f5078f18-c551-11d3-89b9-0000f81fe221</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AD.OpenXml" Version="2.1.0.166" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+    <PackageReference Include="DocumentFormat.OpenXml.Features" Version="2.20.0" />
+    <PackageReference Include="DocumentFormat.OpenXml.Linq" Version="2.20.0" />
+    <PackageReference Include="Open-Xml-PowerTools" Version="4.4.0" />
+    <PackageReference Include="Open-XML-SDK" Version="2.9.1" />
+    <PackageReference Include="OpenXMLSDK-MOT" Version="2.7.1" />
+    <PackageReference Include="System.IO.Packaging" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlSdkTool.ClassExplorer">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.5\tool\OpenXmlSdkTool.ClassExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlSdkTool.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.5\tool\OpenXmlSdkTool.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlSdkTool.DocumentReflector">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.5\tool\OpenXmlSdkTool.DocumentReflector.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlSdkTool.OpenXmlDiff">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.5\tool\OpenXmlSdkTool.OpenXmlDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlSdkTool.OpenXmlValidator">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.5\tool\OpenXmlSdkTool.OpenXmlValidator.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlSdkTool.PackageInspector">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.5\tool\OpenXmlSdkTool.PackageInspector.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DocumentFormat\OpenXml\Drawing\" />
+  </ItemGroup>
+
+</Project>
